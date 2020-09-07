@@ -1,3 +1,6 @@
+IMPORTANT!!!! 
+Before starting this project, please run `npm install` to install all the dependencies and make it running. if npm command isn't found, it is neccessary to install nodeJS and NPM first.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
