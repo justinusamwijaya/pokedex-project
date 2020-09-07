@@ -68,7 +68,7 @@ const DetailPage = ({ match }) => {
     return (
         <div style={{width: '100%', height: '100vh'}}>
             {
-                pokemon ? 
+                pokemon && !loading ? 
                     <div style={{width: '100%', height: '100%', paddingTop: 150}}>
                         <div style={{zIndex: 999, position: 'fixed', top: 0, left: 0 }} className="detail-title">
                             {pokemon.name} <span style={{ color: 'rgba(255, 255, 255, .6)', marginLeft: 5 }}> #{pokemon.number}</span>
@@ -153,7 +153,9 @@ const DetailPage = ({ match }) => {
                             </div>
                         </div>
                     </div>
-                : ''
+                : <div style={{height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <LoadingComponent/>
+                </div>
             }
         </div>
     )
